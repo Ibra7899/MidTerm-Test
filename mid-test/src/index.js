@@ -1,13 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Question1 from "./Components/Question1/addProduct";
+import Question2 from "./Components/Question2/signUp";
+
+const App = () => {
+  return (
+    <div>
+      {<Question1/>}
+      {<Question2/>}
+    </div>
+  );
+};
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <App/>
   </React.StrictMode>
 );
 
